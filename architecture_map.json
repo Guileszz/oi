@@ -1,0 +1,463 @@
+{
+  "metadata": {
+    "total_repositories": 14,
+    "scan_root": "C:\\Users\\Administrator\\Desktop\\oi",
+    "version": "1.0"
+  },
+  "repositories": [
+    {
+      "name": "adapters",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\adapters",
+      "summary": "No README found",
+      "dependencies": [],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 2,
+      "language_distribution": {
+        ".py": 2
+      }
+    },
+    {
+      "name": "include",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\include",
+      "summary": "No README found",
+      "dependencies": [],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 0,
+      "language_distribution": {}
+    },
+    {
+      "name": "integrity",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\integrity",
+      "summary": "No README found",
+      "dependencies": [
+        "os",
+        "shutil",
+        "subprocess",
+        "sys",
+        "traceback",
+        "wraith_core"
+      ],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 3,
+      "language_distribution": {
+        ".py": 3
+      }
+    },
+    {
+      "name": "knowledge",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\knowledge",
+      "summary": "No README found",
+      "dependencies": [],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 0,
+      "language_distribution": {}
+    },
+    {
+      "name": "models",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\models",
+      "summary": "No README found",
+      "dependencies": [
+        "dataclasses",
+        "json",
+        "os",
+        "time",
+        "typing"
+      ],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 4,
+      "language_distribution": {
+        ".py": 4
+      }
+    },
+    {
+      "name": "orchestration",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\orchestration",
+      "summary": "No README found",
+      "dependencies": [
+        "Mirror_Protocol",
+        "argparse",
+        "asyncio",
+        "enum",
+        "fastapi",
+        "httpx",
+        "importlib",
+        "json",
+        "models",
+        "orchestration",
+        "os",
+        "platform",
+        "pydantic",
+        "requests",
+        "sovereign_essence",
+        "subprocess",
+        "sys",
+        "telemetry",
+        "time",
+        "typing",
+        "uuid",
+        "uvicorn"
+      ],
+      "core_logic": [],
+      "environment": [
+        "Web Server",
+        "API Client",
+        "CLI Tool",
+        "Async/Background"
+      ],
+      "expected_outputs": [],
+      "file_count": 8,
+      "language_distribution": {
+        ".py": 8
+      }
+    },
+    {
+      "name": "pipeline",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\pipeline",
+      "summary": "No README found",
+      "dependencies": [
+        "json",
+        "os",
+        "requests",
+        "time"
+      ],
+      "core_logic": [],
+      "environment": [
+        "API Client"
+      ],
+      "expected_outputs": [],
+      "file_count": 4,
+      "language_distribution": {
+        ".py": 4
+      }
+    },
+    {
+      "name": "scripts",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\scripts",
+      "summary": "No README found",
+      "dependencies": [],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 0,
+      "language_distribution": {}
+    },
+    {
+      "name": "src",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\src",
+      "summary": "No README found",
+      "dependencies": [
+        "pybind11/pybind11.h",
+        "pybind11/stl.h",
+        "sstream",
+        "wraith_engine.hpp"
+      ],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 2,
+      "language_distribution": {
+        ".cpp": 2
+      }
+    },
+    {
+      "name": "supra_node",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\supra_node",
+      "summary": "No README found",
+      "dependencies": [
+        "asyncio",
+        "dataclasses",
+        "fastapi",
+        "fusion",
+        "json",
+        "logging",
+        "mutator",
+        "os",
+        "requests",
+        "sys",
+        "time",
+        "typing",
+        "uvicorn"
+      ],
+      "core_logic": [],
+      "environment": [
+        "Web Server",
+        "API Client",
+        "Async/Background"
+      ],
+      "expected_outputs": [],
+      "file_count": 3,
+      "language_distribution": {
+        ".py": 3
+      }
+    },
+    {
+      "name": "telemetry",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\telemetry",
+      "summary": "No README found",
+      "dependencies": [
+        "ctypes",
+        "os"
+      ],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 1,
+      "language_distribution": {
+        ".py": 1
+      }
+    },
+    {
+      "name": "tests",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\tests",
+      "summary": "No README found",
+      "dependencies": [
+        "unittest"
+      ],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 2,
+      "language_distribution": {
+        ".py": 2
+      }
+    },
+    {
+      "name": "utils",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\utils",
+      "summary": "No README found",
+      "dependencies": [
+        "logging"
+      ],
+      "core_logic": [],
+      "environment": [
+        "Standard Library"
+      ],
+      "expected_outputs": [],
+      "file_count": 2,
+      "language_distribution": {
+        ".py": 2
+      }
+    },
+    {
+      "name": "V9_OMNI_REALIZATION",
+      "path": "C:\\Users\\Administrator\\Desktop\\oi\\V9_OMNI_REALIZATION",
+      "summary": "No README found",
+      "dependencies": [
+        "argparse",
+        "ast",
+        "asyncio",
+        "collections",
+        "dataclasses",
+        "engines",
+        "enum",
+        "hashlib",
+        "intelligence_fusion_v3",
+        "logging",
+        "math",
+        "monitors",
+        "mutation_loop",
+        "os",
+        "random",
+        "re",
+        "rex_mutator",
+        "siphon_protocol",
+        "supra_command",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "core_logic": [],
+      "environment": [
+        "CLI Tool",
+        "Async/Background"
+      ],
+      "expected_outputs": [],
+      "file_count": 13,
+      "language_distribution": {
+        ".py": 13
+      }
+    }
+  ],
+  "dependency_graph": {
+    "pipeline": [
+      "models",
+      "orchestration",
+      "supra_node",
+      "V9_OMNI_REALIZATION",
+      "telemetry",
+      "integrity"
+    ],
+    "models": [
+      "pipeline",
+      "orchestration",
+      "supra_node",
+      "V9_OMNI_REALIZATION",
+      "telemetry",
+      "integrity"
+    ],
+    "orchestration": [
+      "pipeline",
+      "models",
+      "supra_node",
+      "V9_OMNI_REALIZATION",
+      "telemetry",
+      "integrity"
+    ],
+    "supra_node": [
+      "pipeline",
+      "models",
+      "orchestration",
+      "V9_OMNI_REALIZATION",
+      "telemetry",
+      "integrity",
+      "utils"
+    ],
+    "V9_OMNI_REALIZATION": [
+      "pipeline",
+      "models",
+      "orchestration",
+      "supra_node",
+      "telemetry",
+      "integrity",
+      "utils"
+    ],
+    "telemetry": [
+      "pipeline",
+      "models",
+      "orchestration",
+      "supra_node",
+      "V9_OMNI_REALIZATION",
+      "integrity"
+    ],
+    "integrity": [
+      "pipeline",
+      "models",
+      "orchestration",
+      "supra_node",
+      "V9_OMNI_REALIZATION",
+      "telemetry"
+    ],
+    "utils": [
+      "supra_node",
+      "V9_OMNI_REALIZATION"
+    ]
+  },
+  "environment_distribution": {
+    "Standard Library": [
+      "adapters",
+      "include",
+      "integrity",
+      "knowledge",
+      "models",
+      "scripts",
+      "src",
+      "telemetry",
+      "tests",
+      "utils"
+    ],
+    "Web Server": [
+      "orchestration",
+      "supra_node"
+    ],
+    "API Client": [
+      "orchestration",
+      "pipeline",
+      "supra_node"
+    ],
+    "CLI Tool": [
+      "orchestration",
+      "V9_OMNI_REALIZATION"
+    ],
+    "Async/Background": [
+      "orchestration",
+      "supra_node",
+      "V9_OMNI_REALIZATION"
+    ]
+  },
+  "redundancy_analysis": [
+    {
+      "repo1": "orchestration",
+      "repo2": "supra_node",
+      "shared_dependencies": [
+        "asyncio",
+        "typing",
+        "sys",
+        "os",
+        "uvicorn",
+        "json",
+        "fastapi",
+        "requests",
+        "time"
+      ],
+      "similarity_score": 0.4090909090909091
+    },
+    {
+      "repo1": "models",
+      "repo2": "supra_node",
+      "shared_dependencies": [
+        "typing",
+        "os",
+        "dataclasses",
+        "json",
+        "time"
+      ],
+      "similarity_score": 0.38461538461538464
+    },
+    {
+      "repo1": "orchestration",
+      "repo2": "V9_OMNI_REALIZATION",
+      "shared_dependencies": [
+        "asyncio",
+        "typing",
+        "os",
+        "argparse",
+        "sys",
+        "enum",
+        "time"
+      ],
+      "similarity_score": 0.3181818181818182
+    },
+    {
+      "repo1": "supra_node",
+      "repo2": "V9_OMNI_REALIZATION",
+      "shared_dependencies": [
+        "asyncio",
+        "typing",
+        "sys",
+        "os",
+        "dataclasses",
+        "logging",
+        "time"
+      ],
+      "similarity_score": 0.3181818181818182
+    }
+  ]
+}
