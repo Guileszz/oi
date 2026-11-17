@@ -1,75 +1,47 @@
-# Supra-Codex Engine
+# Supra-Codex Engine (`oi`)
 
-Supra-Codex is a high-performance distributed engine for large-scale data processing and orchestration.
+`oi` is a Python/C++ project scaffold for local task processing and orchestration. The current safe MVP provides deterministic local execution of tasks without network access, external services, or source mutation.
 
-## Directory Structure
+## Safe local MVP
 
-- `adapters/`: External system interface adapters.
-- `include/`: C++ header files.
-- `integrity/`: Data validation and integrity checking modules.
-- `models/`: Data models and schemas.
-- `orchestration/`: Node management and task scheduling.
-- `pipeline/`: Core execution pipelines.
-- `src/`: C++ source files and Python bindings.
-- `utils/`: Common utilities and logging.
-- `tests/`: Unit and integration tests.
-- `scripts/`: Maintenance and deployment scripts.
+Requirements: Python 3.8 or newer. The MVP uses only the Python standard library and does not require installation of the native extension.
 
-## Build System
-
-The project uses a modern C++/Python build system:
-- `scikit-build-core` for build orchestration.
-- `pybind11` for C++ to Python bindings.
-- `CMake` for C++ build configuration.
-
-### Prerequisites
-
-- Python 3.8+
-- CMake 3.15+
-- C++17 compiler
-
-### Installation
+Run the example:
 
 ```bash
-pip install .
+python -m oi_mvp --workers 3 --task alpha --task beta
 ```
 
-## Quickstart: 3-Node Orchestration
+This prints JSON results in input order. Each task is assigned to a local mock worker in round-robin order. With two workers, the first and third tasks are assigned to `Node-1` and the second to `Node-2`.
 
-The project includes a master runner that simulates a 3-node distributed environment.
+Run the tests:
 
 ```bash
-python run_supra_master.py
+python -m unittest discover -s tests -v
 ```
 
-## Data Contracts
+The runner is available as `LocalTaskRunner` from `oi_mvp`. It validates worker counts and task values, and returns an empty list for an empty batch.
 
-### Task Request
-```json
-{
-  "id": "string",
-  "payload": "string",
-  "priority": "integer",
-  "timestamp": "float"
-}
-```
+## Scope and safety
 
-### Task Response
-```json
-{
-  "id": "string",
-  "node_id": "string",
-  "status": "success | error",
-  "result": "string",
-  "duration": "float"
-}
-```
+The MVP does not:
 
-## Architecture
+- make network requests
+- persist task data
+- load generated code dynamically
+- mutate source files
+- claim to be a production distributed runtime
 
-The Supra-Codex Engine follows a modular architecture where the high-performance core is implemented in C++ (`wraith_core`) and orchestrated by a Python-based master controller.
+The results are a local demonstration of task scheduling only. `run_supra_master.py` and other experimental mutation/rebuild flows are outside this MVP and should be isolated or reviewed before any execution.
 
-1. **WraithEngine (C++)**: Handles heavy computation and data processing.
-2. **Master Orchestrator (Python)**: Manages node lifecycle, task distribution, and error recovery.
-3. **Integrity Layer**: Ensures data consistency across nodes.
-4. **Adapter Layer**: Facilitates communication with various data sources and sinks.
+## Repository layout
+
+- `oi_mvp/`: safe local MVP runner and CLI
+- `tests/`: unit tests for the MVP
+- `bindings/`: pybind11 C++ binding sources
+- `core/`, `api/`, `infrastructure/`: experimental support modules
+- `CMakeLists.txt`, `pyproject.toml`: native/package build configuration
+
+## CI
+
+The GitHub Actions workflow runs the MVP unit tests on Python 3.8 and 3.11. It does not build the native extension or deploy anything.
